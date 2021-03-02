@@ -12,16 +12,12 @@ public class files1 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-Scanner sc=new Scanner(System.in);
-System.out.println("enter firstname");
-int no1=sc.nextInt();
-System.out.println("enter secondname");
-int no2=sc.nextInt();
+ 
 File f=new File("d:\\addition.txt");
-String s=" addition"+"\n "+(no2+no1);
-char ch[]=s.toCharArray();
-FileOutputStream fos=new FileOutputStream(f,true);
+String s=" addition"+"\n"+( 2+ 1);
+ FileOutputStream fos=new FileOutputStream(f,true);
  byte[] b=s.getBytes();
+  fos.write(13);
  fos.write(b);
  fos.flush();
 	}
