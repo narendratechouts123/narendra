@@ -1,4 +1,4 @@
-package date2_3.abstraction;
+package abstraction;
 interface  Operation{
 	public void add(double first,double second);
 }
